@@ -18,3 +18,11 @@ rollup按需加载，打包vue组件库
 * npm i rollup-plugin-vue -D ：用于打包 .vue 文件
 * npm i autoprefixer -D ：用于给css一些属性添加前缀，比如：-webkit 等
 * npm i rollup-plugin-terser -D ：用于代码压缩
+
+
+## rollup支持的打包文件的格式有amd, cjs, es\esm, iife, umd
+* amd为AMD标准
+* cjs为CommonJS标准
+* esm\es为ES模块标准
+* iife为立即调用函数
+* umd同时支持amd、cjs和iife
