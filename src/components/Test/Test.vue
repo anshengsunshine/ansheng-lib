@@ -7,10 +7,3 @@ export default {
   name: "AslTest",
 };
 </script>
-
-<style>
-.asl_test {
-  font-size: 70px;
-  color: red;
-}
-</style>
