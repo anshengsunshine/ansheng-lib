@@ -1,16 +1,16 @@
 # ansheng-lib
 rollup按需加载，打包vue组件库
 
-> 本次开发 参考 掘金 作者：Alaso
+> 本次开发 参考 掘金 作者：Alaso 
 > 原文地址：https://juejin.cn/post/6996892279617093669#heading-5
 
 ## 使用
 `npm i asl-big-screen`
 
-## 开发过程
 ### npm地址
 https://www.npmjs.com/package/asl-big-screen
 
+## 开发过程
 ### npm init -y
 配置 package.json
 
