@@ -16,7 +16,7 @@ export default {
       default: 2160,
     },
     bgColor: {
-      default: "background:rgb(2, 2, 37)",
+      default: "rgb(2, 2, 37)",
     },
   },
   data() {
@@ -75,4 +75,10 @@ export default {
   },
 };
 </script>
-
+<style scoped>
+.asl_frame {
+  position: fixed;
+  transform-origin: left top;
+  background: rgb(2, 2, 37);
+}
+</style>
