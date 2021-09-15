@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anshengsunshine/ansheng-lib#readme",
   "devDependencies": {
-    "rollup-plugin-babel": "^4.4.0"
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0"
   }
 }
