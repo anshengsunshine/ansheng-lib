@@ -1,6 +1,6 @@
 {
   "name": "asl-big-screen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rollup按需加载，打包vue组件库",
   "main": "./dist/bs-display-umd.js",
   "module": "./dist/bs-display-es.js",
