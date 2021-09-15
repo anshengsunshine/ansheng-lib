@@ -1,0 +1,20 @@
+{
+  "name": "ansheng-lib",
+  "version": "1.0.0",
+  "description": "rollup按需加载，打包vue组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshengsunshine/ansheng-lib.git"
+  },
+  "keywords": [],
+  "author": "ansheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshengsunshine/ansheng-lib/issues"
+  },
+  "homepage": "https://github.com/anshengsunshine/ansheng-lib#readme"
+}
