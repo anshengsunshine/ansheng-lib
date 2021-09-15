@@ -2,8 +2,8 @@
   "name": "asl-big-screen",
   "version": "1.0.1",
   "description": "rollup按需加载，打包vue组件库",
-  "main": "./dist/bs-display-umd.js",
-  "module": "./dist/bs-display-es.js",
+  "main": "./dist/ansheng-lib-umd.js",
+  "module": "./dist/ansheng-lib-es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c"
