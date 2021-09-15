@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anshengsunshine/ansheng-lib/issues"
   },
-  "homepage": "https://github.com/anshengsunshine/ansheng-lib#readme"
+  "homepage": "https://github.com/anshengsunshine/ansheng-lib#readme",
+  "devDependencies": {
+    "rollup-plugin-babel": "^4.4.0"
+  }
 }
