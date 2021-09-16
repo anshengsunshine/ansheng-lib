@@ -1,5 +1,5 @@
 {
-  "name": "asl-big-screen",
+  "name": "asl-big-screen-test",
   "version": "1.0.3",
   "description": "rollup按需加载，打包vue组件库",
   "main": "./dist/ansheng-lib-umd.js",
