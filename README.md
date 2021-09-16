@@ -6,7 +6,7 @@ rollup按需加载，打包vue组件库
 
 ## 使用
 `npm i asl-big-screen-v2.0`
-* Vue2.x 中使用 - `src/main.js`：
+* Vue2.x 中使用 - `src/main.js`：  
 `import { AslFrame, AslTest} from "asl-big-screen-v2.0";`  
 `Vue.use(AslFrame)`  
 `Vue.use(AslTest)`  
