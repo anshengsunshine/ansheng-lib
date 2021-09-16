@@ -59,6 +59,3 @@ https://www.npmjs.com/package/asl-big-screen
 `example/index.html`
 引入打包好的 `../dist/bs-display-umd.js` 文件
 
-
-
-
