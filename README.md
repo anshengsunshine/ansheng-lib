@@ -5,8 +5,12 @@ rollup按需加载，打包vue组件库
 > 原文地址：https://juejin.cn/post/6996892279617093669#heading-5
 
 ## 使用
-`npm i asl-big-screen`
-
+`npm i asl-big-screen-v2.0`
+* Vue2.x 中使用 - `src/main.js`：
+`import { AslFrame, AslTest} from "asl-big-screen-v2.0";`
+`Vue.use(AslFrame)`
+`Vue.use(AslTest)`
+ 
 ### npm地址
 https://www.npmjs.com/package/asl-big-screen
 
