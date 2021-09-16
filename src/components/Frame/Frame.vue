@@ -1,5 +1,5 @@
 <template>
-  <div class="asl_frame" ref="aslFrame">
+  <div class="asl_frame" :style="{ background: bgColor }" ref="aslFrame">
     <slot></slot>
   </div>
 </template>
@@ -75,10 +75,9 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss">
 .asl_frame {
   position: fixed;
-  transform-origin: left top;
-  background: rgb(2, 2, 37);
+  transform-origin: left top; //将transform-origin设为左上角
 }
 </style>

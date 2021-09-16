@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .asl_test {
   font-size: 70px;
   color: red;
