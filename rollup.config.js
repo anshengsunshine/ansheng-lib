@@ -2,7 +2,7 @@ import babel from "rollup-plugin-babel"
 import commonjs from "rollup-plugin-commonjs"
 import postcss from 'rollup-plugin-postcss'
 import vue from "rollup-plugin-vue"
-import { terser } from "rollup-plugin-terser"
+// import { terser } from "rollup-plugin-terser"
 
 export default {
     input: "./src/index.js",
@@ -28,24 +28,14 @@ export default {
             compileTemplate: true
         }),
         // postcss(),
-        // postcss({
-        //     // 把 css 插入到 style 中
-        //     // inject: true,
-        //     // 把 css 放到和js同一目录
-        //     extract: true
-        // }),
-        postcss([
-            require("postcss-modules")({
-                getJSON: function (cssFileName, json, outputFileName) {
-                    var path = require("path");
-                    var cssName = path.basename(cssFileName, ".css");
-                    var jsonFileName = path.resolve("./dist/" + cssName + ".json");
-                    fs.writeFileSync(jsonFileName, JSON.stringify(json));
-                },
-            }),
-        ]),
+        postcss({
+            // 把 css 插入到 style 中
+            inject: true,
+            // 把 css 放到和js同一目录
+            // extract: true
+        }),
         commonjs(),  // 支持 commonjs 模块规范
-        terser()  // 代码压缩
+        // terser()  // 代码压缩
     ],
     external: [
         'vue'

@@ -1,5 +1,5 @@
 <template>
-  <div class="asl_frame" ref="aslFrame">
+  <div class="asl_frame" id="asl_frame" ref="aslFrame">
     <slot></slot>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
       //获取父组件传入的容器宽高，通常是设计稿宽高，或者电脑屏幕的宽高
       this.frameWidth = this.width || screen.width;
       this.frameHeight = this.height || screen.height;
-
+      console.log(this);
       //将传入的宽高设为大屏边框容器的宽高
       let frame = this.$refs.aslFrame;
       frame.style.width = this.frameWidth + "px";
@@ -64,11 +64,17 @@ export default {
     },
   },
   mounted() {
-    this.setSize();
-    this.setScale();
-    this.debouncedSetScale = this.debounce(this.setScale, 500);
-    //触发resize事件时，重新计算 大屏边框容器 的缩放值
-    window.addEventListener("resize", this.debouncedSetScale);
+    this.$nextTick(() => {
+      this.setSize();
+      this.setScale();
+      this.debouncedSetScale = this.debounce(this.setScale, 500);
+      setTimeout(() => {
+        console.log("111", document.getElementById("asl_frame"));
+      }, 1000);
+
+      //触发resize事件时，重新计算 大屏边框容器 的缩放值
+      window.addEventListener("resize", this.debouncedSetScale);
+    });
   },
   destroyed() {
     window.removeEventListener("resize", this.debouncedSetScale);

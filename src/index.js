@@ -1,11 +1,11 @@
 
-import Frame from "./components/Frame/index"   //导入Frame/index.js的函数
-import Test from "./components/Test/index"   //导入test/index.js的函数
+import AslFrame from "./components/AslFrame/index"   //导入Frame/index.js的函数
+import AslTest from "./components/AslTest/index"   //导入test/index.js的函数
 
 // Vue.use的用法，执行该函数会全局注册所有组件
 function install(Vue) {
-    Vue.use(Frame)
-    Vue.use(Test)
+    Vue.use(AslFrame)
+    Vue.use(AslTest)
 }
 
 //通过`script`标签引入组件库的情况，注册所有组件
@@ -24,8 +24,8 @@ export { a, b }
 //这里导出各组件的全局组件函数
 //当以 import { Frame } from 'xxx'的方式导入时，就只会导入Frame的相关代码，而不会导入test相关代码
 export {
-    Frame,
-    Test
+    AslFrame,
+    AslTest
 }
 
 export default install
